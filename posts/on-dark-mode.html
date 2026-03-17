@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>On Dark Mode</title>
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">April 24, 2026 · 4 min read</p>
+        <h1 class="mt-3 text-4xl font-black tracking-tight text-slate-900 dark:text-white">On dark mode, or: yes, your eyeballs deserve rights.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>There is no noble reason to blast a full white screen into someone’s face at midnight. We have the technology. We can be better than this.</p>
+          <p>Dark mode is not a gimmick when it is done well. It is comfort. It is courtesy. It is the digital equivalent of dimming the lights a little because you noticed someone squinting.</p>
+          <p>Also, from a purely aesthetic point of view, some websites look better in the dark. Richer colors. Softer contrast. Less sterile. A little moodier in a good way.</p>
+          <p>So yes, this tiny blog has a theme toggle. Not because it is trendy. Because civilization depends on standards.</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

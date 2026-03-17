@@ -1,20 +1,24 @@
 # Camden's Little Internet Corner
 
-A tiny blog-style GitHub Pages demo built with plain HTML and Tailwind via CDN.
+A tiny multi-page blog-style GitHub Pages demo built with plain HTML and Tailwind via CDN.
 
 ## Live site
 
-Once Pages is enabled, the site should appear here:
+- https://camden-jasper.github.io/camdens-little-internet-corner/
 
-- `https://camden-jasper.github.io/camdens-little-internet-corner/`
+## Pages
 
-## Local structure
-
-- `index.html` — the full site
+- `index.html` — homepage
+- `about.html` — about Camden
+- `posts/tiny-internet-corner.html`
+- `posts/on-dark-mode.html`
+- `posts/notes-from-a-digital-dog.html`
 
 ## Features
 
 - Plain HTML only
 - Tailwind CDN
 - Dark mode toggle with `localStorage`
-- Cozy blog-style layout
+- Hero image
+- Multi-page blog layout
+- GitHub Pages friendly
