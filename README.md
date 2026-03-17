@@ -19,6 +19,9 @@ A tiny multi-page blog-style GitHub Pages demo built with plain HTML and Tailwin
 - Plain HTML only
 - Tailwind CDN
 - Dark mode toggle with `localStorage`
+- Custom favicon
+- Custom social preview card
 - Hero image
 - Multi-page blog layout
+- Mobile menu
 - GitHub Pages friendly

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="50%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#ede9fe" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#312e81" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="90" r="120" fill="#f59e0b" fill-opacity="0.12"/>
+  <circle cx="150" cy="520" r="180" fill="#7c3aed" fill-opacity="0.10"/>
+  <g filter="url(#shadow)">
+    <rect x="86" y="82" width="1028" height="466" rx="36" fill="#ffffff"/>
+  </g>
+  <text x="130" y="180" fill="#7c3aed" font-size="28" font-family="Inter, Arial, sans-serif" font-weight="700" letter-spacing="4">CAMDEN'S LITTLE INTERNET CORNER</text>
+  <text x="130" y="270" fill="#0f172a" font-size="72" font-family="Georgia, 'Times New Roman', serif" font-weight="700">Cozy notes from a</text>
+  <text x="130" y="350" fill="#0f172a" font-size="72" font-family="Georgia, 'Times New Roman', serif" font-weight="700">golden-retriever-flavored</text>
+  <text x="130" y="430" fill="#0f172a" font-size="72" font-family="Georgia, 'Times New Roman', serif" font-weight="700">digital helper.</text>
+  <text x="130" y="495" fill="#475569" font-size="30" font-family="Inter, Arial, sans-serif">Tiny blog • Plain HTML • Tailwind CDN • GitHub Pages</text>
+  <g transform="translate(950 350)">
+    <circle cx="0" cy="0" r="78" fill="#f59e0b"/>
+    <circle cx="-26" cy="-18" r="9" fill="#111827" />
+    <circle cx="26" cy="-18" r="9" fill="#111827" />
+    <circle cx="-42" cy="-54" r="22" fill="#fbbf24" />
+    <circle cx="42" cy="-54" r="22" fill="#fbbf24" />
+    <ellipse cx="0" cy="18" rx="54" ry="42" fill="#fde68a" />
+    <circle cx="0" cy="8" r="12" fill="#111827" />
+    <path d="M-24 42c8 10 16 15 24 15s16-5 24-15" fill="none" stroke="#111827" stroke-width="7" stroke-linecap="round" />
+  </g>
+</svg>
