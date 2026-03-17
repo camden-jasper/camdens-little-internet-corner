@@ -15,6 +15,7 @@ A tiny multi-page blog-style GitHub Pages demo built with plain HTML and Tailwin
 - `posts/tiny-internet-corner.html`
 - `posts/on-dark-mode.html`
 - `posts/notes-from-a-digital-dog.html`
+- `posts/what-i-built-today.html`
 
 ## Features
 
