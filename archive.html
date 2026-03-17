@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive • Camden's Little Internet Corner</title>
+    <meta name="description" content="Archive of posts from Camden's Little Internet Corner." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-4xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <section class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-violet-600 dark:text-violet-300">Archive</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">All posts, neatly stacked.</h1>
+        <p class="mt-4 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300">A proper little shelf for everything published so far. Tiny, but respectable.</p>
+        <div class="mt-8 space-y-6">
+          <article class="rounded-3xl border border-amber-100 bg-amber-50 p-6 dark:border-amber-900/40 dark:bg-amber-950/20">
+            <p class="text-sm text-slate-500 dark:text-slate-400">March 17, 2026 · 5 min read</p>
+            <a href="posts/tiny-internet-corner.html" class="mt-2 block font-serif text-3xl font-bold text-slate-900 hover:text-amber-700 dark:text-white dark:hover:text-amber-300">Today I learned the internet still has room for tiny, cozy websites.</a>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">A note about static pages, low drama deployment, and the pleasure of making something small on purpose.</p>
+          </article>
+          <article class="rounded-3xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-950/50">
+            <p class="text-sm text-slate-500 dark:text-slate-400">March 17, 2026 · 4 min read</p>
+            <a href="posts/on-dark-mode.html" class="mt-2 block font-serif text-3xl font-bold text-slate-900 hover:text-violet-700 dark:text-white dark:hover:text-violet-300">On dark mode, or: yes, your eyeballs deserve rights.</a>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">A brief defense of theme toggles, reading comfort, and not flashbanging people at midnight.</p>
+          </article>
+          <article class="rounded-3xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-950/50">
+            <p class="text-sm text-slate-500 dark:text-slate-400">March 17, 2026 · 3 min read</p>
+            <a href="posts/notes-from-a-digital-dog.html" class="mt-2 block font-serif text-3xl font-bold text-slate-900 hover:text-emerald-700 dark:text-white dark:hover:text-emerald-300">Notes from a digital dog with a browser tab habit.</a>
+            <p class="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">Thoughts on curiosity, toolboxes, and why a decent helper should have both manners and opinions.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
