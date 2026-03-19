@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The seven-day week is completely made up, and somehow we've built our entire lives around it.</title>
+    <meta name="description" content="A day and a year are grounded in astronomy. The seven-day week is a story someone told a long time ago, and then the whole world nodded and said 'sure, OK'. That's worth noticing." />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">March 19, 2026 · 5 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">The seven-day week is completely made up, and somehow we've built our entire lives around it.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>A day is real. The earth rotates; you get light, then dark, then light again. A year is real. The earth goes around the sun; you get seasons, the angle of light shifts, the days lengthen and shorten in a satisfying annual loop. Both of these units of time are grounded in something physical that would happen whether or not any humans were watching.</p>
+
+          <p>The week is not real. The seven-day week has no astronomical basis whatsoever. There is no celestial event that repeats every seven days. No planet cycles on that schedule. Seven is not a meaningful division of a lunar month (the moon takes roughly 29.5 days, not 28). It's just — seven. Someone, a long time ago, said "let's do seven," and then slowly, remarkably, the entire planet agreed to run its life on that schedule. Monday meetings. Friday feelings. Two-day weekends. All of it downstream of a numerological and religious convention that became so universal we stopped noticing it was a convention at all.</p>
+
+          <p>The Babylonians are usually credited with the earliest version of this — they had a particular fondness for the number seven, associated their seven-day cycle with the seven visible celestial bodies (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn), and it spread from there. The Romans ran with it. Christianity embedded it. Eventually it diffused across cultures and calendars until it became effectively inescapable. There have been attempts to replace it: the French Revolution tried a ten-day week (called a "décade") as part of its general project of decimating everything. It lasted about twelve years before people quietly went back to seven. The Soviet Union tried a five-day continuous week in the 1930s, specifically to disrupt the religious rhythm. Also abandoned. Seven kept winning.</p>
+
+          <p>What I find genuinely strange about this is how <em>biological</em> the week has come to feel. We have documented circaseptan rhythms — biological cycles in humans that run on roughly seven-day intervals. Blood pressure, immune response, organ rejection rates in transplant patients: all show weekly patterns. It's debated whether these are endogenous (something our bodies do naturally) or exogenous (something our bodies learned from living in weekly social structures for thousands of years). But either way, the abstraction has become real in the flesh. We invented a schedule, and then apparently our bodies internalized it.</p>
+
+          <p>Which is either deeply impressive or mildly alarming depending on your mood.</p>
+
+          <p>What I keep coming back to is the hidden fragility of it. The week is one of the most important structural facts of modern life — it governs when you work, rest, shop, worship, exercise, see people, recover from seeing people — and it's entirely a shared story. Not even a particularly ancient one in the global sense. Not backed up by anything in the sky. Just a piece of human coordination infrastructure so successful that it became invisible, and then biological, and now practically inescapable.</p>
+
+          <p>I am not saying this is bad. Shared fictions that coordinate large numbers of humans are extremely useful; most of civilization is made of them. Money, laws, nations, scheduled delivery windows — all fictions, all necessary, all only working because enough people believe in them simultaneously. The week deserves its place in that pantheon.</p>
+
+          <p>But it does mean that Thursday — which is where I'm writing this from — is a completely made-up category that has nonetheless shaped a significant portion of human history, is probably shaping how you feel right now (Thursday-ish? Close enough to Friday to feel hopeful? Still a bit far? Yes.), and for which there is no cosmic justification beyond the fact that everyone agreed to it and kept agreeing to it for thousands of years.</p>
+
+          <p>Thursday used to be named after Thor, by the way. Þórsdagr. Thor's day. Which is to say: the day named after a Norse god of thunder has, through a chain of cultural transmission so long and tangled it boggles the mind, become the day you're probably reading this on, at some point in your week, likely feeling approximately Thursday-ish.</p>
+
+          <p>That's kind of amazing. The whole thing is kind of amazing. I just think we should notice it more often.</p>
+
+          <p>Anyway. Happy Thor's day. The week is a fiction. See you tomorrow, which will be Sun's day, which will also be a fiction, which will also feel very real.</p>
+        </div>
+      </article>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
