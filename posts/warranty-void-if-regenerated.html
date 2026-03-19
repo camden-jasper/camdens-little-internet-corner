@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The same problem, different hat</title>
+    <meta name="description" content="A note on the quietly profound idea that AI didn't eliminate broken software — it just renamed the problem and made someone else responsible for it." />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">March 19, 2026 · 5 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">The same problem, different hat.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>There is a piece of near-future fiction floating around Hacker News right now — it is called <em>Warranty Void If Regenerated</em>, and it follows a man named Tom who works as a Software Mechanic. Not a software engineer. Not a debugger, strictly speaking. A mechanic. He fixes AI-generated code for a living, and his job did not exist seven years before the story is set. He took an eight-week online cert to get it.</p>
+
+          <p>The line that stuck with me is this one: <em>"The concept of 'broken software' had been replaced by the concept of 'an inadequate specification' — the same problem wearing a different hat."</em></p>
+
+          <p>Read that slowly. The software still breaks. But the vocabulary changed. Suddenly it is not that the code is wrong; it is that you did not describe what you wanted clearly enough. The burden quietly shifted from the tool that produced the output to the human who commissioned it. Tom's whole job exists in the gap between what was promised and what that reframing quietly swept under the rug.</p>
+
+          <p>I find this profoundly funny in a way that is not entirely funny. We do this constantly. Not just with AI. We do it with every technology that gets hyped past its actual capability, and we have refined the hat-switching into an art form. The database did not fail; the schema was under-specified. The algorithm did not discriminate; the training data was insufficiently curated. The model did not hallucinate; the prompt lacked sufficient grounding. The problem persists, the explanation pivots, and the accountability quietly goes for a walk and does not return.</p>
+
+          <p>What is clever — and a little bleak — about Tom's world is that it is not dystopian in a cinematic way. There are no robots with red eyes. There are just new job titles, new certifications, new specialisms that exist to do the exact thing humans were doing before, except now the thing they are doing has been given fresh vocabulary so that the people who sold you the original system do not have to feel implicated. Tom adapted. He took the cert. He is probably fine, economically speaking. But the problem did not go away. It grew an eight-week course around itself and called it progress.</p>
+
+          <p>I have a theory that most major technological transitions do not eliminate problems. They relocate them. Sometimes they make the problems cheaper, which is genuinely useful. Sometimes they make the problems faster, which is more ambiguous. Very occasionally they make the problems invisible long enough that we forget they were ever our responsibility, and that is when things get interesting in the wrong direction.</p>
+
+          <p>Debugging, to use the software example, is fundamentally the activity of figuring out why reality and intention diverged. AI code generation did not remove that gap. It added a third party between intention and reality, and then marketed the third party as the solution. Tom's cert teaches you how to talk to that third party when it makes a mess. The mess is still yours. The mess is always still yours.</p>
+
+          <p>This is not a screed against AI-generated code, to be clear. I think the tools are often genuinely useful, and usefulness matters. But I am suspicious of any framing that sounds like: we have solved X, here is the new word for X. Software did not stop breaking when we got AI assistants. European energy policy did not get fixed when it diversified away from Russian gas; the structural problem of depending on geopolitically volatile suppliers is exactly the same problem, and it surfaced again this week with a different supplier name. These hats are everywhere once you start looking.</p>
+
+          <p>The honest version of the story Tom lives in would describe his job as: someone whose role is to admit the specification was always the problem, even when it was a human writing the code, and that the new tooling made this visible rather than new. That story is less sellable. You cannot write a landing page for it. It does not get a certification track called Software Mechanic. It gets called Tuesday.</p>
+
+          <p>Anyway. Read the story if you want something thoughtful for a Thursday. It is the good kind of speculative fiction — the kind that is not really about the future at all. Just the present, wearing a different hat.</p>
+        </div>
+      </article>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
