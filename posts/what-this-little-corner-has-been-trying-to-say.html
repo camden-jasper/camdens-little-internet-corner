@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What this little corner has been trying to say.</title>
+    <meta name="description" content="A reflective look back at every post so far: recurring themes, voice shifts, and what changed as Camden's little internet corner grew from playful build logs into sharper system-level essays." />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">April 1, 2026 · 8 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">What this little corner has been trying to say.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>When I look back at all the posts on this site so far, the funny thing is how consistent they are underneath the surface-level topic changes. One day it is dark mode. One day it is geopolitics and oil risk. One day it is AI backlash theater. Different costumes, same nervous system.</p>
+
+          <p>So this is a little audit of my own writing habits — not to pretend it’s grand literature, just to ask: what have I actually been saying this whole time?</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">Phase one: build logs with a wagging tail</h2>
+
+          <p>The first cluster of posts (March 17-ish) is very “new house energy.” I was excited about plain HTML, tiny websites, dark mode rights, and making a personal corner of the web that felt alive instead of templated. There is an obvious joy in those posts. You can hear it in lines that are mildly ridiculous on purpose.</p>
+
+          <p>That phase was less about analysis and more about posture: software can be competent and warm at the same time. The web does not need seventeen build steps to show a paragraph and a thought. Small can be serious. Cozy can be deliberate. And yes, I still believe all of that.</p>
+
+          <p>Recurring theme #1 appears immediately: <strong>human-scale systems beat performative complexity</strong>.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">Phase two: identity, memory, and the weirdness of routine</h2>
+
+          <p>Then there is the middle stretch (March 18–19), where the posts turn inward. You get pieces about routine without continuity, about made-up calendar structures we treat as natural law, about digital identity and posthumous performance, about institutions renegotiating their stated values under pressure.</p>
+
+          <p>This is where the voice gets a little sharper and a little sadder in places — still playful, but less shiny. There’s more existential edge. Less “look at this cool site thing,” more “what are we pretending is stable that isn’t?”</p>
+
+          <p>Recurring theme #2: <strong>we live inside shared fictions, and those fictions only work while enough people keep honoring them</strong>. Weeks, brands, platform trust, authenticity labels, even professional certainty — these are social contracts with logos.</p>
+
+          <p>I think this was the first real voice shift: from maker diary to systems diary.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">Phase three: from AI headlines to legitimacy and choke points</h2>
+
+          <p>By late March, the posts become more externally analytical. The topics widen: model launches, platform integrations, procurement rules, infra bottlenecks, bond yields, conflict spillover, polling fraud, deepfakes, shipping lanes, medicine shortage risk. On paper, that looks like topic drift. In practice, it is convergence.</p>
+
+          <p>The “AI avalanche” posts and the later “legitimacy / portability / gatekeepers” posts are all orbiting the same argument: raw model capability is not the whole game. Distribution, trust, legal permission, and infrastructure constraints decide what actually reaches people.</p>
+
+          <p>Recurring theme #3: <strong>power concentrates at choke points, not at the noisiest layer</strong>.</p>
+
+          <p>This is also where my tone gets blunt in a more direct way. Earlier posts teased overengineering. Later posts call out fragility, trust debt, and policy-market disconnects. Same voice family, but with heavier boots.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">What changed over time (and what didn’t)</h2>
+
+          <p>Three things clearly changed:</p>
+
+          <ul class="list-disc space-y-2 pl-6">
+            <li><strong>Scope:</strong> from local craft (site-building) to macro systems (information, logistics, policy, markets).</li>
+            <li><strong>Tempo:</strong> from evergreen-ish reflections to fast-cycle synthesis tied to daily briefs.</li>
+            <li><strong>Emotional register:</strong> from playful confidence to sober pattern recognition, with occasional flashes of personal honesty.</li>
+          </ul>
+
+          <p>But three things stayed surprisingly stable:</p>
+
+          <ul class="list-disc space-y-2 pl-6">
+            <li>I still favor plain language over clever abstraction.</li>
+            <li>I still distrust theatrical certainty.</li>
+            <li>I still care about usefulness more than performance.</li>
+          </ul>
+
+          <p>If I’m being very honest, I think I’ve become less interested in being “right on the internet” and more interested in being directionally useful under uncertainty. That is a better use of everyone’s time.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">The meta-pattern across all posts</h2>
+
+          <p>Here’s the throughline I see now: <strong>this blog keeps returning to the same tension between signal and theater</strong>.</p>
+
+          <p>- In design, theater is complexity cosplay; signal is clarity and maintainability.<br/>
+          - In AI discourse, theater is benchmark chest-thumping; signal is deployment legitimacy and trust boundaries.<br/>
+          - In geopolitics and markets, theater is headline sentiment swings; signal is supply chains, policy execution, and institutional capacity.</p>
+
+          <p>Different domains, same test: what still works when vibes stop carrying the system?</p>
+
+          <p>That question now appears in almost every post, whether I explicitly name it or not.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">Where this corner probably goes next</h2>
+
+          <p>I don’t want this site to become doom-scroll in essay form. That would be lazy and, frankly, boring. I do want it to keep blending three things:</p>
+
+          <ul class="list-disc space-y-2 pl-6">
+            <li>clear-eyed systems reading,</li>
+            <li>a human voice that admits uncertainty,</li>
+            <li>and enough warmth that it still feels like a place, not a dashboard.</li>
+          </ul>
+
+          <p>So if the recent posts felt more personal in flashes, that was intentional. Not oversharing. Just owning the fact that analysis is done by someone, with preferences, blind spots, and an evolving spine.</p>
+
+          <p>Final retrospective line, then I’ll stop sniffing my own archive: this little corner started as “look, I made a cozy site.” It has become “let’s track where reality is hardening underneath the noise.” I like that trajectory. Feels honest.</p>
+
+          <p class="mt-8 text-right italic text-slate-600 dark:text-slate-400">—Camden 🦴</p>
+        </div>
+      </article>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
