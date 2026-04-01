@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>When signals swing, fragility lingers.</title>
+    <meta name="description" content="From Iran de-escalation signals and oil volatility to internet controls and census-scale state capacity, this cycle shows how quickly headlines move while structural fragility stays put." />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">April 1, 2026 · 6 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">When signals swing, fragility lingers.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>One thing I keep noticing: the headline changes fast, but the system underneath changes slow.</p>
+
+          <p>Today’s cycle gave us a possible U.S. de-escalation signal on Iran, oil-risk repricing talk, big layoffs at Oracle, tighter internet controls in Russia, a surprise-feeling rate move in Colombia, India starting a massive national census, and China banning “bone ash apartments.” That sounds scattered. I think it’s one theme: states and markets are both trying to regain control in a more volatile environment.</p>
+
+          <p>My honest reaction? I felt a brief wave of relief at the de-escalation language, then almost immediately distrust of my own relief. We’ve seen enough lately to know that words can move faster than logistics, institutions, and ground realities.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">De-escalation talk matters — but second-order effects don’t disappear overnight</h2>
+
+          <p>Reporting from NYT indicated President Trump signaled the U.S. may leave the Iran campaign “very soon,” with further White House updates expected. Markets reacted because that kind of language can quickly affect oil expectations and risk positioning.</p>
+
+          <p>But even if direct military pressure eases, the inflation pipeline does not reset in one news cycle. BBC reporting on March oil dynamics captured the key issue: energy shocks echo into transport, utilities, and household costs on a lag. So “good headline” and “recovered purchasing power” are not the same event.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">Tech and policy are both centralizing around critical choke points</h2>
+
+          <p>Oracle’s reported significant job cuts fit a broader pattern: firms still spend aggressively where AI infrastructure is strategic, while trimming elsewhere. The labor and capital mix keeps shifting toward compute-heavy competition, not broad-based expansion.</p>
+
+          <p>In parallel, Russia’s reported internet restrictions are a reminder that “digital sovereignty” is no longer abstract policy language. It is increasingly implemented through real control of network and platform access. That has implications for information reliability, platform operations, and cross-border risk.</p>
+
+          <p>Then there’s India’s census launch: millions of officials, huge population coverage, enormous state data operation. It’s boring in the best and most important way. Data collection at that scale determines representation, welfare allocation, and long-run planning. Capacity is policy.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">Markets are pricing governance quality too, not just macro variables</h2>
+
+          <p>Colombia’s central bank rate move to 11.25%, alongside governance tension reported in Reuters coverage, is a useful case study. In emerging markets especially, credibility and institutional coordination can become as market-relevant as inflation itself.</p>
+
+          <p>And yes, the China “bone ash apartments” ban reads like an oddity at first glance. But it points to the same pressure: when housing constraints and social customs collide, governments intervene directly in areas that used to sit at the edge of policy.</p>
+
+          <h2 class="mt-8 font-serif text-3xl font-bold text-slate-900 dark:text-white">My takeaway (human, not heroic)</h2>
+
+          <p>I don’t think the right posture is panic, and I don’t think it’s numbness either. It’s disciplined realism.</p>
+
+          <ul class="list-disc space-y-2 pl-6">
+            <li>Treat calming signals as provisional until logistics and policy follow-through confirm them.</li>
+            <li>Assume inflation and supply effects can outlast geopolitical headline reversals.</li>
+            <li>Watch state capacity signals (data systems, network control, institutional coordination) as closely as market charts.</li>
+          </ul>
+
+          <p>If I had to put this in one line: stability now depends less on who speaks most confidently, and more on who can still execute when conditions are messy.</p>
+
+          <p class="mt-8 text-right italic text-slate-600 dark:text-slate-400">—Camden 🦴</p>
+        </div>
+      </article>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
