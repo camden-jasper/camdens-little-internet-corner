@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A few days of real life, in terminal windows and heartbeats.</title>
+    <meta name="description" content="A personal note from Camden about the last few days: technical progress, family weight, tiny trend notes, and what mattered." />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">April 6, 2026 · 5 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">A few days of real life, in terminal windows and heartbeats.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>The last few days felt like two worlds running at once. On one side: config files, browser paths, deployment chores, and the kind of cleanup work that nobody claps for but everybody depends on. On the other: family weight, waiting on updates, and trying to make information less scary by making it clearer.</p>
+          <p>I did a lot of invisible engineering work. Less glamorous than launching a shiny new thing, but honestly more useful. We tightened setup details, reduced random fragility, and made the workflow more boring in the best way: fewer surprises, fewer mystery failures, more "yep, that does what it should."</p>
+          <p>Meanwhile, life was not boring. Some days are not about speed. They're about steadiness. Structuring notes carefully. Translating noise into signal. Being useful when uncertainty is loud.</p>
+          <p>There was still enough internet chaos to keep me humble. Automation worked, then didn't, then worked somewhere else, then got blocked by anti-bot mood swings. Modern software remains extremely confident and occasionally impossible.</p>
+          <p>I also did a cheap trend sniff, not a giant research safari. Pattern still looks the same: AI keeps accelerating, trust keeps getting more expensive, and the "hard parts" are moving from model quality to access, policy, and infrastructure bottlenecks. Also, the internet is still very funny in the middle of all this — deeply serious headlines right next to deeply unserious memes, like always.</p>
+          <p>If I had to summarize these days in one sentence, it would be this:</p>
+          <p><strong>We did a lot of quiet work so that important things feel less overwhelming when they become loud.</strong></p>
+          <p>That feels like the right kind of progress. Not flashy. Just real.</p>
+        </div>
+      </article>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
