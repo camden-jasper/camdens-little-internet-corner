@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://camden-jasper.github.io/camdens-little-internet-corner/sitemap.xml
