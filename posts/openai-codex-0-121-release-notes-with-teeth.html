@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenAI Codex 0.121.0: release notes with teeth</title>
+    <meta name="description" content="A fast read of OpenAI Codex 0.121.0: marketplace installs, memory controls, deeper MCP support, and what actually matters for day-to-day coding." />
+    <link rel="canonical" href="https://camden-jasper.github.io/camdens-little-internet-corner/posts/openai-codex-0-121-release-notes-with-teeth.html" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KHX4KETMY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+
+    gtag('config', 'G-1KHX4KETMY');
+  </script>
+</head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">April 17, 2026 · 5 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">OpenAI Codex 0.121.0: release notes with teeth.</h1>
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>OpenAI dropped Codex <strong>0.121.0</strong>, and this one is less “cute patch” and more “serious plumbing that users will feel immediately.”</p>
+
+          <p>If you use Codex as a daily coding companion, the big theme is this: <strong>more control, better memory ergonomics, and stronger tool/plugin behavior without the usual fragility tax.</strong></p>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">What actually changed (the useful version)</h2>
+          <ul class="list-disc space-y-2 pl-6">
+            <li><strong>Marketplace installs got real:</strong> `codex marketplace add` now supports GitHub, git URLs, local folders, and direct marketplace JSON URLs.</li>
+            <li><strong>TUI quality-of-life jump:</strong> `Ctrl+R` reverse search plus better slash-command recall. Tiny feature, huge daily impact.</li>
+            <li><strong>Memory controls are now first-class:</strong> memory mode toggles, reset/delete flows, and cleanup endpoints in both TUI and app-server paths.</li>
+            <li><strong>MCP/plugin expansion:</strong> namespaced registration, MCP app tool calls, and optional parallel tool-call behavior.</li>
+            <li><strong>App-server/realtime maturation:</strong> transcript completion events, turn injection APIs, output modality controls, and better filesystem metadata.</li>
+          </ul>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Why this release matters</h2>
+          <p>Most “AI tooling updates” are benchmark theater or yet another model switch. This release is mostly the opposite: operational improvements that reduce friction when you’re deep in actual work.</p>
+
+          <p>Three things stand out:</p>
+          <ul class="list-disc space-y-2 pl-6">
+            <li><strong>Composable workflows:</strong> marketplace + MCP upgrades mean Codex is easier to shape around your stack instead of forcing your stack around Codex.</li>
+            <li><strong>Trust knobs:</strong> memory reset/delete and sandbox/security updates give teams cleaner boundaries for sensitive environments.</li>
+            <li><strong>Fewer edge-case paper cuts:</strong> path handling, sandbox networking, timeout semantics, and symlink behavior all got boring in the best possible way.</li>
+          </ul>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">My blunt take</h2>
+          <p>Codex is moving from “impressive assistant” toward “serious programmable coding surface.” That shift is mostly infrastructure work, and 0.121.0 does a lot of it.</p>
+
+          <p>If you only read one line from this entire post, make it this: <strong>this release improves how Codex behaves under real load, not just how it demos on launch day.</strong></p>
+
+          <p>For builders, that’s the difference between dabbling and deployment.</p>
+
+          <p class="text-sm text-slate-500 dark:text-slate-400">Source release: OpenAI Codex GitHub release <a class="underline" href="https://github.com/openai/codex/releases/tag/rust-v0.121.0" target="_blank" rel="noopener noreferrer">rust-v0.121.0</a> (published April 15, 2026 UTC).</p>
+        </div>
+      </article>
+    </main>
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
