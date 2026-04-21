@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenAI is shipping fast, but trust ships slower.</title>
+    <meta name="description" content="A short personal take on this week in AI: OpenAI's product burst, Anthropic's design push, and why trust and governance are becoming the actual moat." />
+    <link rel="canonical" href="https://camden-jasper.github.io/camdens-little-internet-corner/posts/openai-ships-fast-but-trust-ships-slower.html" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Newsreader','Georgia','serif'] } } } };</script>
+    <style>body{background:linear-gradient(to bottom,#fffaf3,#fff 24%)}.dark body{background:linear-gradient(to bottom,#0f172a,#020617 30%)}</style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KHX4KETMY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-1KHX4KETMY');
+    </script>
+  </head>
+  <body class="text-slate-800 antialiased dark:text-slate-100">
+    <main class="mx-auto max-w-3xl px-6 py-12">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-300">← Back home</a>
+        <button id="theme-toggle" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200">🌙 Dark mode</button>
+      </div>
+
+      <article class="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/40 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-none md:p-10">
+        <p class="text-sm text-slate-500 dark:text-slate-400">April 21, 2026 · 5 min read</p>
+        <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-slate-900 dark:text-white">OpenAI is shipping fast, but trust ships slower.</h1>
+
+        <div class="mt-8 space-y-6 text-base leading-8 text-slate-700 dark:text-slate-300">
+          <p>I did a quick scan of the latest AI cycle, and one thing is obvious: OpenAI is in full product sprint mode. In just a few days we got a stack of announcements around Codex expansion, a new Agents SDK phase, enterprise positioning, cyber defense partnerships, and safety programs.</p>
+
+          <p>My opinion: this is impressive execution. Also slightly exhausting.</p>
+
+          <p>The pace is now so high that the competitive question is no longer just “who has the smartest model?” It is “who can turn raw capability into dependable systems that normal teams can actually trust?”</p>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Why OpenAI still feels like the center of gravity</h2>
+          <p>Even when competitors ship strong models, OpenAI keeps punching above pure model benchmarks because it bundles three things together:</p>
+          <ul class="list-disc space-y-2 pl-6">
+            <li>consumer mindshare (ChatGPT is still the default name people use),</li>
+            <li>developer surface area (agents, tooling, integrations),</li>
+            <li>and enterprise narrative (security + deployment + workflow).</li>
+          </ul>
+          <p>That combo matters more than leaderboard screenshots.</p>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Broader view: everyone is moving toward workflows, not chatboxes</h2>
+          <p>Anthropic’s latest launch (Claude Design) is a good signal of where this is going: from “ask model, get answer” to “co-build real artifacts” — decks, prototypes, visual docs, and other work outputs people can ship.</p>
+          <p>That same shift is showing up across the industry: AI products are becoming less like assistants you talk to and more like coworkers you supervise.</p>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">What makes me cautious</h2>
+          <p>The capability curve is racing ahead of the trust curve. We now have increasingly autonomous behavior, security-sensitive deployments, and political/media influence concerns all happening at once.</p>
+          <p>I’m bullish on the tools, but I’m skeptical of the “move fast, fix social consequences later” reflex. AI is no longer a toy market. It’s becoming infrastructure.</p>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">My short take</h2>
+          <p>OpenAI is likely to keep winning near term if it can keep reliability high while shipping this fast. But the long-term winner in AI won’t just be smartest or first. It’ll be whoever earns operational trust under pressure.</p>
+          <p>Speed gets attention. Trust gets tenure.</p>
+
+          <h2 class="font-serif text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Sources</h2>
+          <ul class="list-disc space-y-2 pl-6">
+            <li><a class="underline" href="https://openai.com/news/" target="_blank" rel="noopener noreferrer">OpenAI News (April 2026 announcements)</a></li>
+            <li><a class="underline" href="https://www.anthropic.com/news" target="_blank" rel="noopener noreferrer">Anthropic News (Claude Design, Project Glasswing)</a></li>
+            <li><a class="underline" href="https://www.theverge.com/ai-artificial-intelligence" target="_blank" rel="noopener noreferrer">The Verge AI coverage (broader ecosystem context)</a></li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <script>
+      const root = document.documentElement; const button = document.getElementById('theme-toggle');
+      function syncButton(){ button.textContent = root.classList.contains('dark') ? '☀️ Light mode' : '🌙 Dark mode'; }
+      button.addEventListener('click',()=>{ root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); syncButton(); });
+      syncButton();
+    </script>
+  </body>
+</html>
